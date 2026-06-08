@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Isiwara Aura - Booking POS</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>New Booking / POS</h1>
+
+    <div class="section">
+        <h2>Guest Information</h2>
+
+        <input type="text" id="guestName" placeholder="Guest Name">
+
+        <input type="text" id="country" placeholder="Country">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+    </div>
+
+    <div class="section">
+        <h2>Treatment Information</h2>
+
+        <select id="treatment">
+            <option value="">Select Treatment</option>
+        </select>
+
+        <select id="therapist">
+            <option value="">Select Therapist</option>
+        </select>
+
+        <select id="room">
+            <option value="">Select Room</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <div class="section">
+    <h2>Introducer Information</h2>
+
+    <select id="guestType">
+        <option value="walkin">Walk In Client</option>
+        <option value="introduced">Introduced Client</option>
+    </select>
+
+    <select id="introducer">
+        <option value="">Select Introducer</option>
+    </select>
+
+    <select id="commissionMode">
+        <option value="percentage">Percentage</option>
+        <option value="fixed">Fixed Amount</option>
+    </select>
+
+    <input
+        type="number"
+        id="commissionInput"
+        placeholder="Commission Value">
+</div>
+
+    <div class="section">
+        <h2>Financial Information</h2>
+
+        <input type="number" id="treatmentPrice" placeholder="Treatment Price">
+
+        <input type="number" id="vasAmount" placeholder="VAS Amount">
+
+        <input type="number" id="discountAmount" placeholder="Discount Amount">
+
+        <input type="number" id="discountPercent" placeholder="Discount %">
+    </div>
+
+    <div class="section summary">
+
+        <h2>Financial Summary</h2>
+
+        <p>Commission Base:
+            <span id="commissionBase">0.00</span>
+        </p>
+
+        <p>Guest Pays:
+            <span id="guestPays">0.00</span>
+        </p>
+
+        <p>Commission:
+            <span id="commissionValue">0.00</span>
+        </p>
+
+        <p>Net Revenue:
+            <span id="netRevenue">0.00</span>
+        </p>
+
+    </div>
+
+    <button id="calculateBtn">
+        Calculate
+    </button>
+
+</div>
+
+<script src="../config.js"></script>
+<script src="booking.js"></script>
+
+</body>
+</html>

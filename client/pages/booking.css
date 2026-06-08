@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
+    width:900px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:8px;
+}
+
+.section{
+    margin-bottom:20px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    cursor:pointer;
+}
+
+.summary{
+    background:#eef5ff;
+    padding:15px;
+}
