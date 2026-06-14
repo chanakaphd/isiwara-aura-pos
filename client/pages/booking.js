@@ -2,6 +2,34 @@ document
 .getElementById("calculateBtn")
 .addEventListener("click", () => {
 
+    const guestType =
+    document.getElementById("guestType");
+
+const introducerSection =
+    document.getElementById(
+        "introducerSection"
+    );
+
+guestType.addEventListener(
+    "change",
+    () => {
+
+        if(
+            guestType.value ===
+            "introduced"
+        ){
+
+            introducerSection.style.display =
+                "block";
+
+        }else{
+
+            introducerSection.style.display =
+                "none";
+        }
+
+    }
+);
     const treatmentPrice =
         Number(
             document.getElementById(
@@ -43,17 +71,26 @@ const commissionInput =
 
 let commission = 0;
 
-if (commissionMode === "percentage") {
+if(
+    document.getElementById(
+        "guestType"
+    ).value === "introduced"
+){
 
-    commission =
-        commissionBase *
-        (commissionInput / 100);
+    if(
+        commissionMode ===
+        "percentage"
+    ){
 
-}
-else {
+        commission =
+            commissionBase *
+            (commissionInput / 100);
 
-    commission =
-        commissionInput;
+    }else{
+
+        commission =
+            commissionInput;
+    }
 }
 console.log("Commission Mode:", commissionMode);
 console.log("Commission Input:", commissionInput);

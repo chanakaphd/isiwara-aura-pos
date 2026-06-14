@@ -33,3 +33,6 @@ button{
     background:#eef5ff;
     padding:15px;
 }
+#introducerSection{
+    display:none;
+}
