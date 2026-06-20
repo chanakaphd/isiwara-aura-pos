@@ -103,5 +103,7 @@ BR-008
 Guest receipts must never show commissions.
 
 BR-009 Room Privacy Locking
+A room is privacy-based
+
 BR-010 Group Sharing Exception
 BR-011 Steam Queue Workflow
